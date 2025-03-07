@@ -39,10 +39,10 @@ const Header = () => {
           <Link to="/" className="text-[#1a1a1a] hover:text-[#f54e39] font-medium">
             Contact us
           </Link>
-          <Link to="/" className="text-[#1a1a1a] border border-[#d9d9d9] hover:border-[#f54e39] px-4 py-2 rounded">
+          <Link to="/" className="text-[#1a1a1a] border border-[#d9d9d9] hover:border-[#f54e39] hover:text-[#f54e39] px-4 py-2 rounded transition-colors">
             CSR
           </Link>
-          <Link to="/" className="bg-[#f54e39] text-white px-4 py-2 rounded flex items-center">
+          <Link to="/" className="bg-[#f54e39] text-white px-4 py-2 hover:bg-white hover:text-[#f54e39] border border-[#f54e39] rounded flex items-center transition-colors">
             Donate <span className="ml-1">❤</span>
           </Link>
         </nav>

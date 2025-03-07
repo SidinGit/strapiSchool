@@ -40,7 +40,7 @@ const Footer = () => {
         {/* Column 5 - Donate */}
         <div className="flex flex-col items-center md:items-start md:ml-[-2rem] mt-8">
           <p className="text-[#191919] font-extrabold text-xl">Big or small, you can make an impact.</p>
-          <a className="bg-[#f54e39] text-white px-6 py-2 rounded inline-flex items-center mt-2 hover:text-[#f54e39] hover:bg-white hover:border-[#f54e39] hover:border-2">
+          <a className="bg-[#f54e39] text-white px-6 py-2 rounded inline-flex items-center mt-2 hover:text-[#f54e39] hover:bg-white hover:border-[#f54e39] hover:border-2 transition-colors">
             Donate ❤
           </a>
         </div>
@@ -48,14 +48,14 @@ const Footer = () => {
 
       {/* Bottom Footer */}
       <div className="mt-8 pt-4 border-t border-gray-250 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-        <p>&copy; {new Date().getFullYear()} DBTR. All Rights Reserved | <a className="hover:text-[#f54e39]">Sitemap</a></p>
+        <p>&copy; {new Date().getFullYear()} DBTR. All Rights Reserved | <a className="hover:text-[#f54e39] transition-colors">Sitemap</a></p>
         
         <div className="flex space-x-4 mt-4 md:mt-0 text-2xl">
-          <a className="hover:text-[#f54e39]"><FaTwitter /></a>
-          <a className="hover:text-[#f54e39]"><FaLinkedinIn /></a>
-          <a className="hover:text-[#f54e39]"><FaInstagram /></a>
-          <a className="hover:text-[#f54e39]"><FaFacebookF /></a>
-          <a className="hover:text-[#f54e39]"><FaYoutube /></a>
+          <a className="hover:text-[#f54e39] transition-colors"><FaTwitter /></a>
+          <a className="hover:text-[#f54e39] transition-colors"><FaLinkedinIn /></a>
+          <a className="hover:text-[#f54e39] transition-colors"><FaInstagram /></a>
+          <a className="hover:text-[#f54e39] transition-colors"><FaFacebookF /></a>
+          <a className="hover:text-[#f54e39] transition-colors"><FaYoutube /></a>
         </div>  
       </div>
       <p className="mt-4 md:mt-5 text-[#4A4A4A]">
