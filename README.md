@@ -45,7 +45,7 @@ The backend of the project uses **Strapi**, an open-source headless CMS that pro
 
 ## Installation
 
-Begin with the Step 1 and make sure to host your strapi backend on Strapi Cloud or else you might loos your local data when you deploy Strapi
+Begin with the step 1 and make sure to host your Strapi backend on Strapi Cloud or else you might lose your local data when you deploy Strapi
 
 ### Step 1: Strapi Setup
 Refer to [Strapi official setup guide](https://docs.strapi.io/dev-docs/quick-start)
