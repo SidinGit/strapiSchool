@@ -1,0 +1,57 @@
+# Frontend
+# Node.js dependencies
+frontend/node_modules/
+
+# Build outputs
+frontend/dist/
+frontend/build/
+
+# .env files
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# Log files
+frontend/logs/
+frontend/*.log
+
+# IDE/Editor specific files
+frontend/.vscode/
+frontend.idea/
+
+# Strapi
+# .tmp directory contains generated files
+schoolStrapiBackend/.tmp/
+
+# Database files
+schoolStrapiBackend/data.db
+schoolStrapiBackend/database/*.db
+
+# Strapi uploads
+schoolStrapiBackend/public/uploads/
+
+# Node.js dependencies
+schoolStrapiBackend/node_modules/
+
+# .env files
+schoolStrapiBackend/.env
+schoolStrapiBackend/.env.example
+
+# Logs
+schoolStrapiBackend/logs/
+
+# IDE/Editor specific files
+schoolStrapiBackend/.vscode/
+schoolStrapiBackend.idea/
+
+# Generated content (e.g., for Strapi)
+schoolStrapiBackend/.strapi/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.bak
+*.swp
+*.swo

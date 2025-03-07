@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "string",
+      "unique": true
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Plantation day",
+        "Annual day",
+        "Sports day",
+        "NCC (National Cadet Corps)",
+        "Science labs",
+        "Science exhibition",
+        "Alumni association",
+        "Cleanliness drive"
+      ]
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
