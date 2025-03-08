@@ -2,6 +2,14 @@
 
 This project is a full-stack application consisting of a **Strapi backend** and a **React frontend**. The frontend is built using React and the Strapi backend is used for managing content dynamically. This project is designed for a school website with various pages, events, and other dynamic content managed via the Strapi CMS.
 
+## Features
+- ***React*** components for pages and UI elements
+- ***Tailwind CSS*** for responsive design
+- ***Context API*** to manage global state for events
+- ***Vite*** for fast development build
+- ***Dynamic event data*** fetched from Strapi backend
+
+
 ## Table of Contents
 - [Frontend](#frontend)
 - [Strapi Backend](#strapi-backend)
@@ -12,12 +20,6 @@ This project is a full-stack application consisting of a **Strapi backend** and 
 
 The frontend of the project is built with React and uses **Vite** for faster development. The UI includes pages like the homepage, about page, event details, and events listing. Tailwind CSS is used for styling and responsive design.
 
-### Features
-- ***React*** components for pages and UI elements
-- ***Tailwind CSS*** for responsive design
-- ***Context API*** to manage global state for events
-- ***Vite*** for fast development build
-- ***Dynamic event data*** fetched from Strapi backend
 
 ### Dependencies
 - React
