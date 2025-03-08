@@ -61,10 +61,7 @@ const EventDetailsPage = () => {
   const { attributes } = event
   const { title, description, date, category, image } = attributes
 
-  // Get image URL or use placeholder
-  // const imageUrl = image?.data?.attributes?.url
-  //   ? `${import.meta.env.VITE_STRAPI_URL}${image.data.attributes.url}`
-  //   : "/placeholder.svg?height=400&width=800"
+
 
   return (
     <div className="container mx-auto px-4 py-12">

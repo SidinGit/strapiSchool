@@ -28,7 +28,6 @@ export const EventsProvider = ({ children }) => {
           
           setFeaturedEvents(response.data.data)
 
-          // Extract unique categories
           const uniqueCategories = [...new Set(response.data.data.map((event) => event.Category))]
           setCategories(["All", ...uniqueCategories])
         }

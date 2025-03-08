@@ -15,12 +15,10 @@ const HomePage = () => {
   const [currentPage, setCurrentPage] = useState(1)
   const eventsPerPage = 6
 
-  // Initialize filtered events
   useEffect(() => {
     setFilteredEvents(events)
   }, [events])
 
-  // Paginate the visible events
   useEffect(() => {
     const endIndex = currentPage * eventsPerPage
     setVisibleEvents(filteredEvents.slice(0, endIndex))
@@ -28,39 +26,33 @@ const HomePage = () => {
 
   const handleFilterChange = (category) => {
     setCurrentPage(1)
-    setFilteredEvents(filterEvents(category)) // Update state based on the selected category
+    setFilteredEvents(filterEvents(category)) 
   }
 
   const loadMoreEvents = () => {
     setCurrentPage((prev) => prev + 1)
   }
 
-  // Open Image Modal
   const openImageModal = (index) => {
     setSelectedImageIndex(index);
-    // console.log(visibleEvents[index])
   };
 
-  // Close Image Modal
   const closeModal = () => {
     setSelectedImageIndex(null);
   };
 
-  // Show Next Image
   const showNextImage = () => {
     setSelectedImageIndex((prev) =>
       prev < visibleEvents.length - 1 ? prev + 1 : 0
     );
   };
 
-  // Show Previous Image
   const showPrevImage = () => {
     setSelectedImageIndex((prev) =>
       prev > 0 ? prev - 1 : visibleEvents.length - 1
     );
   };
 
-  console.log(events)
 
   return (
     <div>
@@ -90,7 +82,7 @@ const HomePage = () => {
               <div className="container mx-auto px-8 md:px-30">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                   {visibleEvents.map((event, index) => (
-                    <div key={event.id} onClick={() => openImageModal(index)}>
+                    <div key={event.id} onClick={() => openImageModal(index)} className="hover:cursor-pointer" >
                       <EventCard event={event} />
                     </div>
                   ))}
